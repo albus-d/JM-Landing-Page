@@ -60,6 +60,8 @@
 
     .legal__body li { margin-bottom: 10px; }
 
+    .legal__body ul ul { margin: 10px 0 0; list-style: circle; }
+
     .legal__body strong { color: #fff6ef; font-weight: 600; }
 
     .legal__body a {
@@ -87,7 +89,7 @@
       <article class="legal__body">
         <p class="section-label">Legal</p>
         <h1>Privacy Policy</h1>
-        <p class="legal__meta">JM Studio (jellymedia.vn) · Last updated: September 13, 2026</p>
+        <p class="legal__meta">JM Studio (jellymedia.vn) · Last updated: September 23, 2026</p>
 
         <p>This Privacy Policy describes how JM Studio ("we", "us") handles information in connection with (1) this website, (2) our mobile applications published on Google Play, and (3) our internal business tools that connect to Google services through Google APIs.</p>
 
@@ -98,14 +100,19 @@
         <p>Each of our mobile applications has its own privacy policy, linked from the application's Google Play listing, which describes the data that specific application collects. Our applications are monetized through in-app advertising served by Google AdMob and its mediation partners; those partners' handling of advertising identifiers is described in the per-application policies and in Google's own privacy policy.</p>
 
         <h2>3. Internal tools that use Google APIs</h2>
-        <p>We operate internal, non-public reporting tools (the "Tools") that connect to Google services on behalf of our own company accounts only. The Tools are used exclusively by JM Studio employees; they are not offered, sold or distributed to any third party and never act on any Google account other than our own.</p>
+        <p>We operate internal, non-public tools (the "Tools") that connect to Google services on behalf of our own company accounts only. The Tools are used exclusively by JM Studio employees; they are not offered, sold or distributed to any third party and never act on any Google account other than our own.</p>
         <ul>
           <li><strong>Google APIs used:</strong> Google Ads API and AdMob API, authorized through Google OAuth by our own staff.</li>
-          <li><strong>Data accessed:</strong> advertising campaign performance (spend, conversions, geographic and bidding data, account change history) from our own Google Ads accounts, and advertising revenue and mediation reports from our own AdMob account. The Tools are read-only: they do not create, modify or delete campaigns, budgets, ads or any other account object.</li>
-          <li><strong>How it is used:</strong> to compute return on ad spend, cost per install and profit per application, campaign and country, and to produce internal daily reports for our user-acquisition team.</li>
+          <li><strong>Data accessed:</strong> advertising campaign performance (spend, conversions, geographic and bidding data, account change history) and campaign settings (status, budgets, bidding targets, ad text) from our own Google Ads accounts, and advertising revenue and mediation reports from our own AdMob account. The AdMob API is used read-only.</li>
+          <li><strong>How it is used:</strong>
+            <ul>
+              <li><strong>Reporting</strong> — to compute return on ad spend, cost per install and profit per application, campaign and country, and to produce internal daily reports for our user-acquisition team.</li>
+              <li><strong>Account management</strong> — authorized staff can use the Tools to make changes to our own Google Ads accounts only: pausing or enabling campaigns and ads, adjusting campaign budgets and bidding targets, and editing ad text. Every change is initiated manually by a staff member; the Tools never modify any account other than our own.</li>
+            </ul>
+          </li>
           <li><strong>Storage and security:</strong> data retrieved through Google APIs is stored as daily aggregates in Google Cloud (Firestore) inside our own Google Cloud project, protected by Google Cloud access controls; OAuth credentials are stored encrypted and are never shared.</li>
-          <li><strong>Sharing:</strong> we do not sell, rent or share data obtained through Google APIs with any third party, and we do not use it for advertising to any person or to build user profiles. It is used only for the internal reporting described above.</li>
-          <li><strong>Retention and deletion:</strong> aggregated reporting data is retained for as long as it is useful for internal analysis. Access can be revoked at any time by the account owner at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>, after which the Tools can no longer retrieve data.</li>
+          <li><strong>Sharing:</strong> we do not sell, rent or share data obtained through Google APIs with any third party, and we do not use it for advertising to any person or to build user profiles. Aggregated internal reports are delivered only to our own staff, through our own email and messaging accounts. The data is used only for the reporting and account management described above.</li>
+          <li><strong>Retention and deletion:</strong> aggregated reporting data is retained for as long as it is useful for internal analysis. Access can be revoked at any time by the account owner at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>, after which the Tools can no longer retrieve data or make changes.</li>
         </ul>
         <p>Our use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
