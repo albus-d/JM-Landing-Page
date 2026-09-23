@@ -724,6 +724,7 @@ a {
 
 .footer__links {
   display: flex;
+  flex-wrap: wrap;
   gap: clamp(12px, 1.4vw, 20px);
 }
 
